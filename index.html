@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lancers | Taking Your Business Forward</title>
+  <meta name="description" content="Lancers - A software development company">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <header class="unique-header">
+    <nav class="unique-nav">
+      <a href="#hero" class="logo">
+        <span class="dot-pulse"></span>
+        <span class="logo-text">Lancers</span>
+        <span class="logo-tag">SOFTWARE</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="#portfolio" class="nav-item dropdown-toggle">Portfolio</a>
+          <div class="dropdown">
+            <a href="#">Restrova</a>
+            <a href="#">Amanat</a>
+            <a href="#">ComplySimplify</a>
+            <a href="#">LegitWrite AI</a>
+            <a href="#">PrimeMe</a>
+            <a href="#">IntelliLearn</a>
+            <a href="#">Nova QR Scanner</a>
+            <a href="#">Magic Masker</a>
+            <a href="#">PeekBlocker</a>
+            <a href="#">Notifiyer</a>
+            <a href="#">SmartFolio (Coming Soon)</a>
+          </div>
+        </li>
+        <li><a href="#team" class="nav-item">Our Team</a></li>
+        <li><a href="#contact" class="nav-item">Contact Us</a></li>
+      </ul>
+
+      <a href="tel:+923111588439" class="nav-cta-unique">
+        <span class="cta-pulse"></span>
+        <span class="cta-label-full">Contact (+92 311 1588439)</span>
+        <span class="cta-label-short">Contact</span>
+      </a>
+
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE SLIDE-DOWN MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="mobile-menu-link">Home</a>
+      <a href="#about" class="mobile-menu-link">About Us</a>
+
+      <div class="mobile-menu-group">
+        <button type="button" class="mobile-menu-link mobile-menu-toggle" id="mobilePortfolioToggle"
+          aria-expanded="false" aria-controls="mobilePortfolioPanel">
+          <span>Portfolio</span>
+          <span class="mobile-menu-chevron">▾</span>
+        </button>
+        <div class="mobile-submenu" id="mobilePortfolioPanel">
+          <a href="#">Restrova</a>
+          <a href="#">Amanat</a>
+          <a href="#">ComplySimplify</a>
+          <a href="#">LegitWrite AI</a>
+          <a href="#">PrimeMe</a>
+          <a href="#">IntelliLearn</a>
+          <a href="#">Nova QR Scanner</a>
+          <a href="#">Magic Masker</a>
+          <a href="#">PeekBlocker</a>
+          <a href="#">Notifiyer</a>
+          <a href="#">SmartFolio (Coming Soon)</a>
+        </div>
+      </div>
+
+      <a href="#team" class="mobile-menu-link">Our Team</a>
+      <a href="#contact" class="mobile-menu-link">Contact Us</a>
+
+      <a href="tel:+923111588439" class="mobile-menu-cta">
+        <span class="cta-pulse"></span>
+        Contact (+92 311 1588439)
+      </a>
+    </div>
+  </header>
+
+  <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
+  <main>
+    <!-- FULL-SCREEN HERO SECTION WITH AUTO ANIMATION COVERING FULL DEVICE SCREEN -->
+    <section class="hero-fullscreen-section" id="hero">
+
+      <!-- FULL SCREEN CANVAS BACKGROUND -->
+      <div class="hero-canvas-fullscreen">
+        <canvas id="frameCanvas"></canvas>
+        <div class="hero-canvas-overlay"></div>
+      </div>
+
+      <!-- HERO HEADING CONTENT OVERLAY (LEFT SIDE) -->
+      <div class="hero-content-wrap">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          TRANSFORM YOUR BUSINESS WITH LANCERS
+        </div>
+        <h1 class="hero-main-title">
+          Innovating <span class="gradient-accent">Digital Solutions</span> for Tomorrow's Business
+        </h1>
+        <p class="hero-company-text">Lancers Software (Private) Limited</p>
+        <div class="hero-actions-group">
+          <a href="#portfolio" class="btn-primary-gradient">Discover Restrova</a>
+          <a href="#team" class="btn-ghost-glow">Explore Team</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ICON STRIP SECTION BELOW HERO -->
+    <div class="wrap" style="position:relative; z-index:20;">
+      <div class="icon-strip reveal">
+        <div><b>Robust</b>Architecture</div>
+        <div><b>Scalable</b>By design</div>
+        <div><b>Secure</b>By default</div>
+        <div><b>Efficient</b>Delivery</div>
+      </div>
+    </div>
+
+    <!-- TEAM SECTION -->
+    <section id="team">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="tag">Meet our team</span>
+          <h2>The people behind Lancers.</h2>
+        </div>
+        <div class="team-grid" id="teamGrid">
+          <div class="team-card reveal">
+            <div class="team-avatar">FK</div>
+            <h4>Faizan Khan</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Backend Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">AS</div>
+            <h4>Abdullah Shahzad</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">MERN Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">IM</div>
+            <h4>Iqbal Manzoor</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Mobile App Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">AK</div>
+            <h4>Awais Khan</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">AI/ML Engineer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">NA</div>
+            <h4>Noor ul Ain</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Technology Consultant</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">MN</div>
+            <h4>Mehar U Nisa</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Web Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">TA</div>
+            <h4>Taimoor Awan</h4><span class="flag">🇺🇸 USA</span>
+            <div class="role">Business Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">QB</div>
+            <h4>Qasim bin Habib</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Industrial Designer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">HK</div>
+            <h4>Hammad Khalid</h4><span class="flag">🇬🇧 UK</span>
+            <div class="role">Software Engineer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">KM</div>
+            <h4>Kanwal Mehreen</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Project Manager</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">SR</div>
+            <h4>Saif Ur Rehman</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Software Engineer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">MH</div>
+            <h4>M. Hassan</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Backend Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">MH</div>
+            <h4>M. Huzaifa</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Python Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">AA</div>
+            <h4>Aqib Ansari</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Full-stack Developer</div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar">MT</div>
+            <h4>Muhammad Talha</h4><span class="flag">🇵🇰 Pakistan</span>
+            <div class="role">Backend Intern</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCEPT / VIDEO SECTION -->
+    <section>
+      <div class="wrap">
+        <div class="concept reveal">
+          <div class="concept-copy">
+            <span class="tag">From Concept, To Product</span>
+            <h2>Lancers realizes your ideas through cutting-edge technology.</h2>
+            <p>From the first sketch on a whiteboard to a product running in production, our team stays hands-on at
+              every stage — planning, building, testing, and shipping alongside you.</p>
+          </div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/Krt0F3QBeh8" title="Lancers introduction" allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK MARQUEE SECTION -->
+    <section style="padding:0;">
+      <div class="wrap section-head center reveal" style="padding-top:110px; margin-bottom:40px;">
+        <span class="tag">Our stack</span>
+        <h2>Cutting-edge technologies driving your success.</h2>
+        <p>A robust stack of modern tools and frameworks so every build is current, scalable, and forward-thinking.</p>
+      </div>
+      <div class="tech-wrap">
+        <div class="tech-track" id="techTrack">
+          <span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span
+            class="tech-pill">Express.js</span><span class="tech-pill">MongoDB</span><span
+            class="tech-pill">MySQL</span><span class="tech-pill">React Native</span><span
+            class="tech-pill">Flutter</span><span class="tech-pill">Kotlin</span><span
+            class="tech-pill">Vue.js</span><span class="tech-pill">Figma</span><span class="tech-pill">Adobe
+            XD</span><span class="tech-pill">Docker</span><span class="tech-pill">Jenkins</span><span
+            class="tech-pill">Python</span><span class="tech-pill">Apache Spark</span><span
+            class="tech-pill">Hadoop</span><span class="tech-pill">Apache Kafka</span><span
+            class="tech-pill">Kubernetes</span><span class="tech-pill">AWS</span><span class="tech-pill">Microsoft
+            Azure</span><span class="tech-pill">DevOps</span><span class="tech-pill">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="tag">Why choose Lancers</span>
+          <h2>Six reasons teams keep coming back.</h2>
+        </div>
+
+        <div class="feature-row reveal">
+          <div class="feature-copy">
+            <span class="feature-num">Pricing</span>
+            <h3>Reasonable pricing</h3>
+            <p>We design our pricing around your budget, so startups and established enterprises both get transparent,
+              competitive rates without compromising on quality.</p>
+            <a href="#contact" class="btn-ghost">Request a demo</a>
+          </div>
+          <div class="feature-visual"><span class="tag-chip">flexible engagement models</span></div>
+        </div>
+
+        <div class="feature-row reverse reveal">
+          <div class="feature-copy">
+            <span class="feature-num">Quality</span>
+            <h3>Quality and excellence</h3>
+            <p>From user-centric UI/UX to robust data engineering, every project is executed with precision using the
+              latest technologies and methodologies.</p>
+            <a href="#contact" class="btn-ghost">Contact us now</a>
+          </div>
+          <div class="feature-visual"><span class="tag-chip">precision-first delivery</span></div>
+        </div>
+
+        <div class="feature-row reveal">
+          <div class="feature-copy">
+            <span class="feature-num">Security</span>
+            <h3>Security and privacy</h3>
+            <p>Encryption, secure coding practices, and compliance with international data protection standards keep
+              your business and customer data safe.</p>
+            <a href="#contact" class="btn-ghost">Request a demo</a>
+          </div>
+          <div class="feature-visual"><span class="tag-chip">encrypted end to end</span></div>
+        </div>
+
+        <div class="feature-row reverse reveal">
+          <div class="feature-copy">
+            <span class="feature-num">Communication</span>
+            <h3>Responsive and proactive communication</h3>
+            <p>From initial consultation to final delivery and beyond, we keep you informed and involved so your
+              feedback shapes every step.</p>
+            <a href="#contact" class="btn-ghost">Contact us now</a>
+          </div>
+          <div class="feature-visual"><span class="tag-chip">weekly check-ins</span></div>
+        </div>
+
+        <div class="feature-row reveal">
+          <div class="feature-copy">
+            <span class="feature-num">Customization</span>
+            <h3>Customization and personalization</h3>
+            <p>One size doesn't fit all — our agile approach adapts to your specific objectives across web, mobile,
+              data, and UI/UX work.</p>
+            <a href="#contact" class="btn-ghost">Request a demo</a>
+          </div>
+          <div class="feature-visual"><span class="tag-chip">built around your goals</span></div>
+        </div>
+
+        <div class="feature-row reverse reveal">
+          <div class="feature-copy">
+            <span class="feature-num">Support</span>
+            <h3>Long-term support and maintenance</h3>
+            <p>Our relationship doesn't end at launch. From routine updates to unforeseen issues, we're on hand to keep
+              your product performing.</p>
+            <a href="#contact" class="btn-ghost">Contact us now</a>
+          </div>
+          <div class="feature-visual"><span class="tag-chip">ongoing maintenance</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <span class="tag">FAQ</span>
+          <h2>Frequently asked questions.</h2>
+        </div>
+        <div class="faq-list reveal" id="faqList">
+          <div class="faq-item open">
+            <button class="faq-q"><span>How can we start a project with Lancers?</span><span
+                class="plus">+</span></button>
+            <div class="faq-a">
+              <p>Contact us through the website or email. We'll schedule an initial consultation to discuss your
+                project's needs, objectives, and how we can bring your vision to life.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>How long does it typically take to complete a project?</span><span
+                class="plus">+</span></button>
+            <div class="faq-a">
+              <p>Timelines vary with complexity and scope. After the initial consultation, we'll share a project
+                estimate and stay committed to meeting it without cutting corners on quality.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>How does Lancers ensure the security of its digital solutions?</span><span
+                class="plus">+</span></button>
+            <div class="faq-a">
+              <p>We follow best-practice security protocols — data encryption, secure coding, and regular audits — to
+                protect the integrity of every solution we ship.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>How does the development process work at Lancers?</span><span
+                class="plus">+</span></button>
+            <div class="faq-a">
+              <p>Our agile process covers consultation, planning, design, development, testing, deployment, and ongoing
+                support — flexible enough to adapt, structured enough to deliver.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>What services does Lancers offer?</span><span class="plus">+</span></button>
+            <div class="faq-a">
+              <p>Web development, mobile development, data engineering, cloud management, UI/UX design, automation,
+                scripting, and technical consulting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" id="contact">
+      <div class="wrap">
+        <h2>Have a build in mind? Let's talk it through.</h2>
+        <a href="tel:+923111588439" class="btn-primary">Contact (+92 311 1588439)</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo"><span class="dot"></span>Lancers</a>
+          <p>Lancers Software (Private) Limited — building web, mobile, and cloud software for businesses ready to move
+            forward.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Our Products</h5>
+          <a href="#">Restrova</a>
+          <a href="#">Amanat</a>
+          <a href="#">Magic Masker</a>
+          <a href="#">IntelliLearn</a>
+          <a href="#">ComplySimplify</a>
+          <a href="#">SmartFolio</a>
+        </div>
+        <div class="footer-col">
+          <h5>About Lancers</h5>
+          <a href="#about">About us</a>
+          <a href="#">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <a href="#about">Privacy Policy</a>
+          <a href="#about">Terms of Service</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Helpdesk</a>
+        </div>
+        <div class="footer-col">
+          <h5>Lancers Software (Private) Limited</h5>
+          <p style="margin-bottom:4px; color:var(--muted); opacity:1;">Headquarters</p>
+          <a href="https://maps.app.goo.gl/k2sz8G2h5rra93rr5" target="_blank" rel="noopener">Plot No. 70/5, Faizan
+            Street, Range Road, Pakistan</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright © 2026 Lancers.</span>
+        <span>Built with Lancers' own pipeline.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // Interactivity scripts
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.team-grid').forEach(grid => {
+        [...grid.children].forEach((el, i) => el.style.transitionDelay = (i % 5) * 70 + 'ms');
+      });
+      document.querySelectorAll('.icon-strip').forEach(strip => {
+        [...strip.children].forEach((el, i) => el.style.transitionDelay = i * 80 + 'ms');
+      });
+
+      const revealEls = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => io.observe(el));
+
+      const track = document.getElementById('techTrack');
+      if (track) {
+        track.innerHTML += track.innerHTML;
+      }
+
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const btn = item.querySelector('.faq-q');
+        const ans = item.querySelector('.faq-a');
+        if (item.classList.contains('open')) { ans.style.maxHeight = ans.scrollHeight + 'px'; }
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-a').style.maxHeight = null;
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            ans.style.maxHeight = ans.scrollHeight + 'px';
+          }
+        });
+      });
+
+      // ---- Mobile menu (hamburger) ----
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileBackdrop = document.getElementById('mobileMenuBackdrop');
+      const portfolioToggle = document.getElementById('mobilePortfolioToggle');
+      const portfolioPanel = document.getElementById('mobilePortfolioPanel');
+
+      function closeMobileMenu() {
+        document.body.classList.remove('mobile-menu-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open menu');
+      }
+
+      function openMobileMenu() {
+        document.body.classList.add('mobile-menu-open');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        menuToggle.setAttribute('aria-label', 'Close menu');
+      }
+
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = document.body.classList.contains('mobile-menu-open');
+          isOpen ? closeMobileMenu() : openMobileMenu();
+        });
+
+        mobileBackdrop.addEventListener('click', closeMobileMenu);
+
+        mobileMenu.querySelectorAll('.mobile-menu-link[href^="#"], .mobile-menu-cta, .mobile-submenu a').forEach(link => {
+          link.addEventListener('click', closeMobileMenu);
+        });
+
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') closeMobileMenu();
+        });
+
+        // Close the mobile menu automatically if the viewport grows back to desktop size
+        const desktopQuery = window.matchMedia('(min-width: 901px)');
+        const handleViewportChange = (e) => { if (e.matches) closeMobileMenu(); };
+        if (desktopQuery.addEventListener) {
+          desktopQuery.addEventListener('change', handleViewportChange);
+        } else if (desktopQuery.addListener) {
+          desktopQuery.addListener(handleViewportChange);
+        }
+      }
+
+      if (portfolioToggle && portfolioPanel) {
+        portfolioToggle.addEventListener('click', () => {
+          const isOpen = portfolioToggle.getAttribute('aria-expanded') === 'true';
+          portfolioToggle.setAttribute('aria-expanded', String(!isOpen));
+          portfolioPanel.style.maxHeight = isOpen ? null : portfolioPanel.scrollHeight + 'px';
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
